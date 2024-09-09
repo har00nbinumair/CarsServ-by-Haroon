@@ -1,0 +1,361 @@
+/* CSS */
+
+* {
+    font-family: "Barlow", sans-serif;
+}
+
+.sticky-top{
+    box-shadow: 0 3px 10px #0000006b;
+}
+
+.top-bar,
+.nav-link {
+    font-family: "Ubuntu", sans-serif;
+    color: #596277;
+}
+
+.navbar .nav-item .nav-link {
+    color: #111111;
+}
+
+.nav-item:not(:last-of-type) .nav-link:hover {
+    color: #D81324 !important;
+}
+
+.navbar-brand,
+.carousel-text {
+    font-family: "Barlow", sans-serif;
+}
+
+.carousel-item::after,
+.counter-section::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    opacity: 70%;
+    z-index: 1;
+}
+
+.counter-section {
+    background-image: url(img/carousel-bg-1.jpg);
+    background-position: center;
+    position: relative;
+}
+
+.services-section p i {
+    color: #198754;
+}
+
+#pagesContent .active{
+    background-color: #D81324 !important;
+    color: white !important;
+}
+
+.services-section button.active,
+.services-section button.active i {
+    background-color: #D81324 !important;
+    color: #fff !important;
+}
+
+.book-service {
+    background: rgba(0, 0, 0, 0.7)url(img/carousel-bg-2.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+}
+
+.about-links:hover,
+.services-links:hover,
+.tech-links:hover,
+.testimonial-links:hover,
+.booking-links:hover{
+    color: #ac0613;
+}
+
+.about-page,
+.services-page,
+.tech-page,
+.testimonial-page,
+.booking-page{
+    background: rgba(0, 0, 0, 0.7)url(img/carousel-bg-2.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.team-overlay {
+    opacity: 0;
+    transform: scale(.2);
+    transition: all .5s ease-in-out;
+    background-color: #D81324;
+    color: #D81324;
+}
+
+.technitian:hover .team-overlay {
+    opacity: 99 !important;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+
+/* owl-carousel */
+.owl-carousel p {
+    color: #596277;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dot span {
+    border-radius: 0px !important;
+    padding: 8px !important;
+}
+
+.owl-dots .active span,
+.qoute,
+.header-carousel .carousel-text a,
+.about-us a,
+.services-section a,
+.book-a-service-form,
+.scrolltotop{
+    background-color: #D81324 !important;
+}
+
+/* owl Carousel End */
+
+footer {
+    background: rgb(19, 18, 18)url(img/carousel-bg-1.jpg);
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+footer i {
+    color: #fff !important;
+}
+
+footer ul:last-of-type li:hover {
+    width: 90%;
+    transform: scaleX(1.1) !important;
+    cursor: pointer !important;
+    transform-origin: left !important;
+    transition: all .3s ease-in-out;
+    overflow: hidden !important;
+}
+
+.scrolltotop {
+    opacity: 0;
+    transition: all .8s ease-in-out;
+}
+
+.scrolled {
+    opacity: 1;
+}
+
+
+.fa-brands,
+.fa-solid,
+.fa-regular,
+.navbar-nav li a:hover,
+.about-us p.text-uppercase,
+.about-us h1 span:first-of-type,
+.services-section p.text-uppercase,
+.technitians p.text-uppercase,
+.testimonials p.text-uppercase,
+.calltoaction p:first-of-type {
+    color: #D81324;
+}
+
+.active,
+.navbar-brand {
+    color: #D81324 !important;
+}
+
+.about-us p,
+.services-section p {
+    color: #596277;
+}
+
+.about-us span,
+.about-us h6,
+.services-section button,
+.services-section h3,
+.services-section button:hover,
+.calltoaction h1,
+.calltoaction p:last-of-type {
+    color: #0B2154;
+}
+
+.book-service button:last-of-type:hover {
+    background-color: #051946 !important;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-item:last-of-type:hover,
+.header-carousel a:hover,
+.about-us a:hover,
+.services-section a:hover {
+    background-color: #ac0613 !important;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* Animations */
+
+.carousel-upper-car {
+    animation: zoomin 1.5s ease-in-out 0s 1;
+}
+
+@keyframes zoomin {
+    from {
+        transform: scale(.3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+.carousel-text h1 {
+    animation: move 1s ease-in-out 0s 1;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-80px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+
+.carousel-text a {
+    display: inline-block;
+    animation: move-2 1s ease-in-out 0s 1;
+    ;
+}
+
+@keyframes move-2 {
+    from {
+        display: inline-block;
+        transform: translateY(-50px);
+    }
+
+    to {
+        display: inline-block;
+        transform: translateY(0px);
+    }
+}
+
+
+/* Animations End */
+
+/* Media Queries */
+
+@media only screen and (max-width:992px) {
+    .top-bar {
+        display: none !important;
+    }
+
+    
+    .not-found{
+        width: 100% !important;
+    }
+
+    .navbar-nav .qoute:last-of-type {
+        display: none !important;
+    }
+
+    .navbar {
+        padding: 1rem !important;
+    }
+
+    .navbar-brand {
+        padding: 0px !important;
+    }
+
+    .carousel-upper-car {
+        display: none !important;
+    }
+
+    .carousel-text {
+        text-align: center;
+    }
+
+    .carousel-upper-content {
+        margin: 0rem !important;
+        padding: 0rem !important;
+    }
+
+
+}
+
+@media only screen and (max-width:768px) {
+    .carousel-item {
+        height: 75vh !important;
+        overflow: hidden;
+    }
+
+    iframe{
+       height: 540px !important; 
+    }
+
+    .carousel-item img {
+        transform: scaleX(1.3);
+        height: 100% !important;
+    }
+
+    .services-section img,
+    .about-us img {
+        height: 350px !important;
+    }
+
+    .developed-by {
+        flex-direction: column;
+    }
+
+    .developed-by>div {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .developed-by div:nth-of-type(2) {
+        justify-content: center !important;
+        margin: .75rem 0 !important;
+    }
+
+}
+
+@media screen and (min-width:442px) and (max-width:768px) {
+    div.news-letter {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:1185px) and (min-width:992px) {
+    .carousel-upper-content {
+        padding: 0px !important;
+        margin: 0px !important;
+        justify-content: center;
+    }
+
+    .carousel-upper-car {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+}
+
+/* Media Queries End */
+
+/* CSS End */

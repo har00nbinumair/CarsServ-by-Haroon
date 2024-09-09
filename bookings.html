@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =====================Head====================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- ===================Title========================= -->
+
+    <title>CarServ-Booking</title>
+
+    <!-- =======================Fonts===================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- =======================Icons================== -->
+
+    <script src="https://kit.fontawesome.com/9ad1eefe07.js" crossorigin="anonymous"></script>
+
+    <!-- ===================Bootstrap min.css======================== -->
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- ==========================CSS====================== -->
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ===================AOS  js Library CDN==================== -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- =============================Head-End====================== -->
+</head>
+
+<body style="position: relative;" data-bs-target="#navbarContent" data-bs-spy="scroll" id="pages">
+    <!-- ======================Body-Start================= -->
+
+    <!-- ==================Top=================== -->
+
+    <div class="container-fluid d-flex justify-content-between top-bar align-items-center px-5 py-3"
+        style="background-color: #F2F2F2">
+        <div class="address">
+            <small class="mx-2"><i class="fa-solid fa-location-dot px-2"></i>123 Street, New York, USA
+            </small>
+            <small class="mx-2"><i class="fa-solid fa-clock px-2"></i>Mon - Fri : 09.00 AM - 09.00 PM
+            </small>
+        </div>
+        <div class="get-in-touch d-flex align-items-center">
+            <small class="mx-2"><i class="fa-solid fa-phone px-2"></i>+012 345 6789
+            </small>
+            <div class="mx-2">
+                <i class="fa-brands fa-facebook p-1  mx-2 bg-light"></i>
+                <i class="fa-brands fa-twitter p-1 mx-2 bg-light"></i>
+                <i class="fa-brands fa-linkedin-in p-1 mx-2 bg-light"></i>
+                <i class="fa-brands fa-instagram p-1 mx-2 bg-light"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- =======================Top-End==================== -->
+
+    <!-- ====================Navbar-Start===================== -->
+
+    <div class="container-fluid m-0 p-0 sticky-top">
+        <nav class="navbar navbar-expand-lg p-0 bg-light navbar-light">
+            <div class="container-fluid fw-bold m-0 p-0">
+                <a href="" class="navbar-brand  px-5">
+                    <h2 class="fw-bold"><i class="fa-solid fa-car px-3"></i>CarServ</h2>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon" style="z-index: 9999999999;"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarContent">
+                    <ul class="navbar-nav ms-auto m-0 py-0">
+                        <li class="nav-item mx-2 py-3 text-uppercase"><a href="index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item mx-2 py-3 text-uppercase"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item mx-2 py-3 text-uppercase"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item mx-2 py-3 text-uppercase dropdown"><a href="#pages"
+                                class="nav-link dropdown-toggle position-relative" data-bs-spy="scroll" data-bs-target="#pagesContent" data-bs-toggle="dropdown" >Pages</a>
+                            <ul class="dropdown-menu" id="pagesContent">
+                                <li><a href="#pages" class="dropdown-item active">Bookings</a></li>
+                                <li><a href="technitians.html" class="dropdown-item">Technitians</a></li>
+                                <li><a href="testimonial.html" class="dropdown-item">Testimonials</a></li>
+                                <li><a href="404.html" class="dropdown-item">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2 py-3 text-uppercase"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item py-3 ms-2 px-4 text-light qoute"><a href=""
+                                class="nav-link text-uppercase text-light">Get a Qoute<i
+                                    class="fa-solid fa-arrow-right mx-3 fs-5 text-light"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ====================Navbar-End========================= -->
+
+    <!-- ==============Booking=================== -->
+
+    <div class="container-fluid  booking-page m-0 text-light py-5 p-0 text-center">
+        <h1 class="fw-bold display-3">Booking</h1>
+        <div class="">
+            <a href="#" class="text-decoration-none  booking-links" style="color: #D81324;">HOME</a>
+            /
+            <a href="#" class="text-decoration-none booking-links" style="color: #D81324;">PAGES</a>
+            /
+            <a href="#" class="text-decoration-none text-light">BOOKING</a>
+        </div>
+    </div>
+
+
+    <!-- ==============Booking-End====================== -->
+
+    <!-- ==================Pros================== -->
+
+    <section>
+        <div class="container py-5 ">
+            <div class="row  my-5 px-4">
+
+
+                <div class="col-lg-4 col-md-6  py-5   px-4" data-aos="fade-up">
+                    <div class="row">
+                        <div class="pros-icon py-4 col-3">
+                            <i class="fa-solid fa-certificate" style="font-size: 45px;"></i>
+                        </div>
+                        <div class="pros-txt col-9 py-3">
+                            <h4 class="fw-bold">Quality Servicing</h4>
+                            <p class="">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <a href="#" class="link-dark text-decoration-none border-bottom ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6  py-5  px-4" style="background-color: #F2F2F2 ;" data-aos="fade-up"
+                    data-aos-delay="150">
+                    <div class="row">
+                        <div class="pros-icon  py-4 col-3 ">
+                            <i class="fa-solid fa-users-gear" style="font-size: 45px;"></i>
+                        </div>
+                        <div class="pros-txt col-9 py-3">
+                            <h4 class="fw-bold">Quality Servicing</h4>
+                            <p class="">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <a href="#" class="link-dark text-decoration-none border-bottom">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 py-5  px-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row">
+                        <div class="pros-icon py-4 col-3">
+                            <i class="fa-solid fa-screwdriver-wrench" style="font-size: 45px;"></i>
+                        </div>
+                        <div class="pros-txt col-9 py-3">
+                            <h4 class="fw-bold">Quality Servicing</h4>
+                            <p class="">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <a href="#" class="link-dark text-decoration-none border-bottom">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================Pros-End================ -->
+
+<!-- ====================Book-a-Service-section=============== -->
+
+<section>
+    <div class="book-service" data-aos="fade-up" data-aos-duration="500">
+        <div class="container">
+            <div class="row h-100 justify-content-center">
+                <div class="col-lg-6 col-12 text-light py-5 my-3 align-self-center px-4">
+                    <h1 class="fw-bold mb-4">Certified and Award Winning Car Repair Service Provider</h1>
+                    <p class="fw-semibold">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum.
+                        Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos
+                        vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores
+                        magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                </div>
+                <div class="col-lg-6 col-11 book-a-service-form" data-aos="zoom-in" data-aos-duration="700"
+                    data-aos-delay="500">
+                    <div class="text-light text-center my-5">
+                        <h1 class="fw-bold fs-1">Book For A Service</h1>
+                        <div class="row px-3">
+                            <div class="col-sm-6 col-12 m-0 p-0 px-4 py-2">
+                                <input type="text" placeholder="Your Name"
+                                    class="form-control-sm w-100 d-inline-block border-0 p-3 px-3 " name="" id="">
+                            </div>
+                            <div class="col-sm-6 col-12 m-0 p-0 px-4 py-2">
+                                <input type="email" placeholder="Your Email"
+                                    class="form-control-sm w-100 d-inline-block border-0 p-3 px-3 " name="" id="">
+                            </div>
+                            <div class="col-sm-6 col-12 m-0 p-0 px-4 py-2">
+                                <select name="" class="form-control-sm w-100 d-inline-block border-0 p-3 px-3"
+                                    id="">
+                                    <option value="">Select A Service</option>
+                                    <option value="">Service 1</option>
+                                    <option value="">Service 2</option>
+                                    <option value="">Service 3</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 col-12 m-0 p-0 px-4 py-2">
+                                <input type="date" placeholder="Service Date"
+                                    class="form-control-sm w-100 d-inline-block border-0 p-3 px-3 " name="" id="">
+                            </div>
+                            <div class="col-12 w-100 m-0 p-0 px-4 py-2">
+                                <textarea name="" id="" placeholder="Special Request"
+                                    class="border-0 d-inline-block w-100 px-3" rows="3"></textarea>
+                            </div>
+                            <div class="col-12 w-100 m-0 p-0 px-4 py-2">
+                                <button
+                                    class="btn-primary btn w-100 d-inline-block border-0 py-3 text-uppercase fw-bold"
+                                    style="background-color: #0B2154;">Book Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================Book A service End================ -->
+
+<!-- =================Call-to-action================= -->
+
+<div class="container px-4 " data-aos="fade-up">
+    <div class="row my-5 py-5">
+        <div class="col-md-8">
+            <div class=" m-0 p-0 calltoaction">
+                <p class="text-uppercase fw-bold m-0">// Call To Action //</p>
+                <h1 class="fw-bold mb-3 mt-2">Have Any Pre Booking Question?</h1>
+                <p>Lorem diam ea sit dolor labore. Clita et dolor erat sed est lorem sed et sit. Diam sed duo magna erat et stet clita ea magna ea sed, sit labore magna lorem tempor justo rebum dolores. Eos dolor sea erat amet et, lorem labore lorem at dolores. Stet ea ut justo et, clita et et ipsum diam.</p>
+            </div>
+        </div>
+        <div class="col-md-4 align-items-center justify-content-center">
+            <div class="p-4" style="background-color: #D81324;">
+                <h3 class="py-3 fw-bold text-center text-light"><i class="fa fa-phone" aria-hidden="true"></i> +012 345 6789</h3>
+                <a
+                class="btn-primary btn w-100 d-inline-block rounded-0 border-0 py-3 text-uppercase fw-bold"
+                style="background-color: #0B2154;" href="">CONTACT US <i class="fa px-2 fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =================Call-to-action-End================= -->
+
+    <!-- ========================Footer======================= -->
+
+    <footer class="">
+        <div class="container  text-light pt-4">
+            <div class="row py-4 border-bottom ">
+                <div class="col-lg-3 col-md-6 col-12 p-3">
+                    <h3 class="fw-bold">Address</h3>
+                    <ul class="list-unstyled ">
+                        <li class="my-3 fs-5"><i class="fa-solid fa-location-dot"></i><small
+                                class="d-inline-block mx-2">123 Street, New York, USA</small></li>
+                        <li class="my-3 fs-5"><i class="fa-solid fa-phone"></i><small class="d-inline-block mx-2">+012
+                                345 67890
+                            </small></li>
+                        <li class="my-3 fs-5"><i class="fa-solid fa-envelope"></i><small
+                                class="d-inline-block mx-2">info@example.com</small></li>
+                    </ul>
+                    <div class="footer-icons">
+                        <i class="fa me-1 fa-twitter rounded-circle border d-inline-block p-2"
+                            style="height: 35px; width: 35px;" aria-hidden="true"></i>
+                        <i class="fa mx-1 fa-facebook rounded-circle border d-inline-block p-2 "
+                            style="height: 35px; width: 35px;" aria-hidden="true"></i>
+                        <i class="fa mx-1 fa-youtube rounded-circle border d-inline-block p-2"
+                            style="height: 35px; width: 35px;" aria-hidden="true"></i>
+                        <i class="fa mx-1 fa-linkedin rounded-circle border d-inline-block p-2"
+                            style="height: 35px; width: 35px;" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 p-3">
+                    <h3 class="fw-bold ">Opening Hours</h3>
+                    <div class="my-4">
+                        <p class="m-0 fw-bold">Monday - Friday:</p>
+                        <p class="m-0">09.00 AM - 09.00 PM</p>
+                    </div>
+                    <div class="my-4">
+                        <p class="m-0 fw-bold">Saturday - Sunday:</p>
+                        <p class="m-0">09.00 AM - 12.00 PM</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 p-3">
+                    <h3 class="fw-bold mb-3">Services</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fa-solid fa-chevron-right me-2"></i><a href="" class="text-decoration-none text-light">Diagnostic Test</a></li>
+                        <li class="my-2"><i class="fa-solid fa-chevron-right me-2"></i><a href="" class="text-decoration-none text-light">Engine Servicing</a></li>
+                        <li class="my-2"><i class="fa-solid fa-chevron-right me-2"></i><a href="" class="text-decoration-none text-light"> Tires Replacement</a></li>
+                        <li class="my-2"><i class="fa-solid fa-chevron-right me-2"></i><a href="" class="text-decoration-none text-light">Oil Changing</a></li>
+                        <li class="my-2"><i class="fa-solid fa-chevron-right me-2"></i><a href="" class="text-decoration-none text-light">Vacuam Cleaning</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 p-3">
+                    <h3 class="fw-bold mb-3">Newsletter</h3>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="news-letter position-relative border bg-light">
+                        <input type="email" placeholder="Your Email" class="form-control py-3 w-100">
+                        <button
+                            class="btn text-uppercase position-absolute top-0 end-0 mt-2 me-2 py-2 text-light text-uppercase fw-bold "
+                            style="background-color: #D81324;">Signup</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="p-0 m-0 d-flex justify-content-between py-4 developed-by">
+                <div class="m-0 p-0 w-50">
+                    &copy; <a href="" class="text-light">Your Site Name</a> , All Rights Reserved. Designed By <a
+                        href="https://www.instagram.com/haro0n._.khan/" target="_blank" class="text-light">Haroon
+                        Khan</a>
+                </div>
+                <div class="m-0 p-0 d-flex align-items-center">
+                    <a href="" class="text-decoration-none px-2 m-0 py-0 text-light border-end">Home</a>
+                    <a href="" class="text-decoration-none px-2 m-0 py-0 text-light border-end">Cookies</a>
+                    <a href="" class="text-decoration-none px-2 m-0 py-0 text-light border-end">Help</a>
+                    <a href="" class="text-decoration-none ps-2 m-0 py-0 text-light">FQAs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =============Footer-End============== -->
+
+    <!-- =================Move Back Up=============== -->
+
+    <div onclick="scrollToTop();" class=" text-light p-3 d-flex position-fixed end-0 bottom-0 scrolltotop"
+        style="z-index: 99999999; height: 50px; width: 50px; right: 40px !important; bottom: 40px !important; cursor: pointer;">
+        <i class="fa-solid text-light fa-arrow-up fs-4"></i>
+    </div>
+
+    <!-- =====================Move-Back-Up End============ -->
+
+
+    <!-- =====================Bootstrap min.js====================== -->
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <!-- ====================AOS CDN================ -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- =========================JavaScript================= -->
+
+    <script>
+
+        // ===========> AOS Library Script
+
+        AOS.init({
+            easing: 'ease-in-out',
+            once: true,
+        });
+
+        // ===========> AOS Library Script End
+
+        // ===========> Scroll To Top
+
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+
+        const element = document.querySelector('.scrolltotop');
+
+
+        const className = 'scrolled';
+
+
+        const threshold = window.innerHeight * 0.1;
+
+        window.addEventListener('scroll', () => {
+
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > threshold) {
+
+                element.classList.add(className);
+            } else {
+
+                element.classList.remove(className);
+            }
+        });
+
+
+    </script>
+
+    <!-- ========================Body-End===================== -->
+</body>
+
+</html>
